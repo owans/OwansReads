@@ -22,20 +22,34 @@ section nav .nav2 ul li{
 
 h2{
     text-align: justify;
+    margin-top: 100px;
+    margin-bottom: 0;
 }
 
 p{
-    text-transform: capitalize;
+    padding-top: 0;
 }
 
 div p{
-    color: rgb(146, 14, 14);
+    color: rgb(17, 2, 2);
+}
+
+aside{
+    border-color: black;
+    background-color: brown;
+    width: 200px;
+    border-radius: 10px;
+    margin-left: 80%;
+}
+
+aside form{
+    display: block;
 }
 
 .footer{
     display: flex;
     justify-content: center;
-    padding: 30%;
+    padding: 250px;
     list-style-type: none;
     color:black;
 }
