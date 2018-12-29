@@ -5,6 +5,11 @@
                 background-size: center;
                 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             }
+
+            .main-nav{
+                width: 0px;
+                padding: 0px 10px;
+            }
             
             section nav {
                 display: flex;
@@ -13,27 +18,26 @@
                 border-radius: 9px;
             }
 
-            .nav h3 a{
-                color: black;
+            .main-nav h3 a{
+                color: rgb(247, 242, 242);
                 text-decoration: none;
             }
-            
+
             .nav2 ul {
                 list-style-type: none;
                 margin: 20px;
                 display: inline-flex;
-                padding-left: 850px;
+                padding-left: 950px;
             }
             
             .nav2 ul li a{
-                color: black;
+                color: rgb(247, 242, 242);
                 text-decoration: none;
             }
 
             section nav .nav2 ul li {
                 padding-right: 30px;
                 border: 5px;
-                border-radius: 2px;
             }
             
             h2 {
@@ -48,7 +52,7 @@
             }
             
             div p {
-                color: rgb(17, 2, 2);
+                color: rgb(94, 8, 8);
             }
             
             aside {
@@ -67,14 +71,18 @@
 
             aside .user input{
                     border-style: none;
+                    padding: 8px;
+                    margin: 5px 2px;
             }
             
             aside .user input:last-child{
                 margin-left: 60px;
                 margin-top: 8px;
                 background: brown;
-                border: 2px solid;
+                border: 2px solid black;
+                border-radius: 5px;
                 padding-top: 5px;
+                font-family: sans-serif;
             }
 
             .footer {
@@ -87,39 +95,50 @@
                 font-family: Arial, Helvetica, sans-serif;
             }
 
+            .active:hover{
+                background-color: gray;
+            }
 
-            /* Smartphones (portraits and landscape) ----------- */
-            @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
-                aside{
-                    margin: 0;
-                    height: 
-                }
+            @media all and (max-width: 320px){
+
+            body{
+                height: 500px;
+                width: 350px;
+                margin: 0px;
             }
             
-            /* Smartphones (landscape)--------*/
-            @media only screen and (min-width : 481px){
-
+            .main-nav{
+                display: block;
+                margin-top: 0px;
+                padding-top: 0px;
             }
 
-            /* Smartphones (portrait)------- */
-            @media only screen and (max-width : 320px){
+            .nav2 ul{ 
+                padding: 0px 0px;
+                margin-top: 45px;
+                margin-bottom: 0px;
+                margin-right: 20px;
+                margin-left: 0px;
+                display: block;
+                color: rgb(170, 98, 5);
+               }
 
+            aside{
+                margin: 0px;
             }
 
-            /* Desktops and laptops------ */
-            @media only screen and (min-width : 1025px) {
-                
+            h2{
+                margin-top: 10px;
+                margin-right: 40px;
             }
 
+            p{
+                margin-top: 5px;
+            }
+            
 
-
-            /* On all screen types with a window width of between 480px and 1280px
-            @media all and (min-width: 480px) and (max-width: 1280px){
-                aside{
-                    margin: 0; 
-                }
-            } */
-
-            .active:hover{
-                background-color: white;
+            .footer p{
+                font-size: 5px;
+                font-weight: bolder;
+            }
             }
